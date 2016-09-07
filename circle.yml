@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: 6.1.0
+general:
+  artifacts:
+    - screenshots
+    - selenium-debug.log
+    - npm-debug.log
