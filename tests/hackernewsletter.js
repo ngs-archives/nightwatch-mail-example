@@ -3,8 +3,6 @@ module.exports = {
     const page = browser.page.hackernewsletter();
     const email = browser.globals.email;
 
-    console.info(page.assert);
-
     page.navigate()
       .createEmailRoute(email)
       .waitForElementVisible('@form')
@@ -31,6 +29,7 @@ module.exports = {
       .waitForElementNotPresent('@unsubscribeForm')
       .assert.urlEquals('https://hackernewsletter.us1.list-manage.com/unsubscribe/post')
       .assert.containsText('@unsubscribeSuccessHeading', 'Unsubscribe Successful')
+      .deleteEmailRoutes()
       ;
 
     browser.end();
