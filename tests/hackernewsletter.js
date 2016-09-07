@@ -6,7 +6,7 @@ module.exports = {
     page.navigate()
       .createEmailRoute(email)
       .waitForElementVisible('@form')
-      .assert.urlContains('.html?utm_expid=')
+      .assert.urlContains('?utm_expid=')
       .clearValue('@email')
       .setValue('@email', email)
       .click('@submit')
