@@ -3,6 +3,8 @@ module.exports = {
     const page = browser.page.hackernewsletter();
     const email = browser.globals.email;
 
+    browser.resizeWindow(880, 880);
+
     page.navigate()
       .createEmailRoute(email)
       .waitForElementVisible('@form')

@@ -3,6 +3,8 @@ Nightwatch Email Testing Example
 
 [![CircleCI](https://circleci.com/gh/ngs/nightwatch-mail-example.svg?style=svg)](https://circleci.com/gh/ngs/nightwatch-mail-example)
 
+![](screen.gif)
+
 A example project for testing email delivery using [Nightwatch], [Mandrill] and [RequestBin].
 
 Getting Started
